@@ -17,13 +17,13 @@ def integrate_async(f: callable, a: Union[int, float], b: Union[int, float], *, 
 
 if __name__ == '__main__':
     t = timeit.timeit(
-        lambda: funcs.integrate(math.atan, 0, math.pi / 2, n_iter=10 ** 5),
+        lambda: funcs.integrate(math.atan, 0, math.pi / 2, n_iter=10 ** 6),
         number=100
     )
     print(f'Sync: {round(t, 5)}, s')
 
     t = timeit.timeit(
-        lambda: integrate_async(math.atan, 0, math.pi / 2, n_iter=10 ** 5),
+        lambda: integrate_async(math.atan, 0, math.pi / 2, n_iter=10 ** 6),
         number=100
     )
     print(f'Async: {round(t, 5)}, s')
