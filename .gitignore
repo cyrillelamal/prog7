@@ -1,2 +1,4 @@
 /venv/
 /lab1415/db.sqlite3
+
+__pycache__/
