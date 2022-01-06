@@ -1,3 +1,7 @@
 beautifulsoup4~=4.10.0
 requests~=2.26.0
 natasha~=1.4.0
+matplotlib~=3.4.3
+wordcloud~=1.8.1
+Django~=3.2.9
+setuptools~=57.0.0
